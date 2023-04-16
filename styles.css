@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Quantico&display=swap");
+* {
+  font-family: "Quantico", sans-serif;
+}
+
+html {
+  background: linear-gradient(to left, #dc143c, #ffd700);
+}
+.todo {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  float: right;
+  gap: 40px;
+}
+aside {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.whole-todo {
+  position: absolute;
+  top: 200px;
+  left: 680px;
+}
+#entry {
+  height: 40px;
+}
+#checkBtn {
+  width: 40px;
+  height: 40px;
+}
