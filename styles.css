@@ -33,14 +33,21 @@ aside {
 }
 #checkBtn:hover {
   transform: scale(1.2);
+  box-shadow: 0px 0px 20px 5px rgba(45, 240, 6, 0.514);
 }
 .check {
   margin-right: 10px;
 }
 .head {
-  text-align: center;
-  margin-top: 90px;
+  display: inline-block;
+  position: absolute;
+  left: 800px;
+  margin-top: 70px;
   color: wheat;
+  box-shadow: 0px 0px 5px 1px black;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
 }
 .save-btn {
   position: absolute;
@@ -48,10 +55,10 @@ aside {
   display: flex;
   gap: 43px;
 }
-.save-button {
+.btn {
   padding: 10px;
   width: 100px;
-  /* border: 2px solid black; */
+  border: 2px solid black;
   border-radius: 10px;
   transition: all 0.3s;
   cursor: pointer;
@@ -62,7 +69,7 @@ aside {
   display: flex;
   gap: 43px;
 }
-#entry {
+.list {
   height: 40px;
   font-size: 30px;
   border-radius: 20px;
@@ -71,11 +78,62 @@ aside {
   border: 1px solid white;
   display: flex;
 }
-#entry:focus {
+
+.list:focus {
   box-shadow: 0px 0px 20px 5px rgba(245, 245, 220, 0.514);
 }
-.save-button:hover {
+.btn:hover {
   transform: translateY(-5px);
-  color: rgb(223, 15, 32);
+  color: rgb(23, 212, 33);
   font-size: 110%;
+}
+.delete-button:hover {
+  color: rgb(238, 14, 14);
+}
+@media only screen and (max-width: 720px) {
+  html,
+  body {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+  }
+  .todo {
+    position: absolute;
+    right: 400px;
+    width: 200px;
+    margin: 0;
+  }
+  .head {
+    left: 30px;
+  }
+  .check {
+    position: absolute;
+    right: 600px;
+  }
+  #checkBtn {
+    width: 100%;
+  }
+  .list {
+    font-size: 20px;
+  }
+  .delete-btn {
+    position: absolute;
+    left: -340px;
+    display: flex;
+    gap: 64px;
+  }
+  .save-btn {
+    position: absolute;
+    left: -390px;
+    display: flex;
+    gap: 64px;
+  }
+  .btn {
+    padding: 1px;
+    width: 120%;
+  }
+  .btn:hover {
+    /* transform: translateY(0px); */
+    font-size: 80%;
+  }
 }
