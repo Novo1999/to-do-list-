@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Quantico&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
 * {
-  font-family: "Quantico", sans-serif;
+  font-family: 'Quantico', sans-serif;
 }
 
 html {
@@ -136,4 +136,7 @@ aside {
     /* transform: translateY(0px); */
     font-size: 80%;
   }
+}
+.line-through {
+  text-decoration: line-through;
 }
